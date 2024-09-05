@@ -1,4 +1,5 @@
 import styles from '@/components/Menu/Menu.module.css'
+import Link from 'next/link';
 import { useState } from 'react';
 import { LiaBarsSolid } from "react-icons/lia";
 
@@ -12,12 +13,12 @@ const Menu = (): React.ReactElement => {
         <nav className={styles.navbar}>
             <div className={styles.maxWidth}>
                 <div className={styles.logo}>
-                    <a href="index.html">Eco-Eletrica</a>
+                    <Link href="/">Eco-Eletrica</Link>
                 </div>
                 <ul className={`${styles.menu} ${ isActive ? styles.active : ""}`} id={styles.menuSite}>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre-empresa.html">Sobre Empresa</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/sobre">Sobre Empresa</Link></li>
+                    <li><Link href="/contato">Contato</Link></li>
 
                 </ul>
                 <div className={styles.menuBtn} id={styles.menuBtn}>
@@ -25,7 +26,7 @@ const Menu = (): React.ReactElement => {
                 </div>
             </div>
         </nav>
-    )
+    );
 }
 
 export default Menu;

@@ -1,3 +1,4 @@
+import Menu from "@/components/Menu";
 import Head from "next/head";
 
 export default function Sobre() {
@@ -10,6 +11,8 @@ export default function Sobre() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Menu />
+        <br /><br /><br /><br /><br /><br /><br />
         <h2>Página Sobre Empresa</h2>
       </main>
     </>
