@@ -1,4 +1,6 @@
+import AboutContent from "@/components/AboutContent";
 import Menu from "@/components/Menu";
+import Footer from "@/components/Footer";
 import Head from "next/head";
 
 export default function Sobre() {
@@ -12,8 +14,8 @@ export default function Sobre() {
       </Head>
       <main>
         <Menu />
-        <br /><br /><br /><br /><br /><br /><br />
-        <h2>Página Sobre Empresa</h2>
+        <AboutContent />
+        <Footer />
       </main>
     </>
   );

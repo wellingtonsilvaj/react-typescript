@@ -1,4 +1,4 @@
-.max-width {
+.maxWidth {
     max-width: 1300px;
     padding: 0 10px;
     margin: auto;
@@ -21,6 +21,7 @@
     background-color: var(--main-color);
     border-bottom: solid var(--third-color) 1px;
 }
+
 .navbar .maxWidth {
     display: flex;
     align-items: center;
@@ -53,23 +54,27 @@
         display: block;
         z-index: 999;
     }
+
     .navbar .menu {
         background-color: var(--main-color);
         position: fixed;
         height: 100vh;
-        width: 100%; 
+        width: 100%;
         left: -100%;
         top: 0;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
     }
+
     #menuSite.active {
         left: 0;
     }
+
     .navbar .menu li {
         display: block;
     }
+
     .navbar .menu li a {
         display: inline-block;
         margin: 13px 0;
@@ -77,4 +82,5 @@
     }
 
 }
+
 /*Fim do Menu*/

@@ -21,10 +21,10 @@
     color: var(--site-color);
     background-color: var(--main-color);
     font-family: 'Quicksand', 'Open Sans';
-    margin: 60px ;
+    margin: 60px;
 }
 
-.services .title{
+.services .title {
     text-align: center;
     margin: 40px 0;
     font-weight: 400;
@@ -63,7 +63,7 @@
     transition: all 0.3s ease;
 }
 
-.services .servContent .card:hover .box{
+.services .servContent .card:hover .box {
     transform: scale(1.05);
 }
 

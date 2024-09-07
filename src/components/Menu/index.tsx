@@ -9,13 +9,13 @@ const Menu = (): React.ReactElement => {
     const activeMenu = (): void => {
         setIsActive(!isActive);
     }
-    return(
+    return (
         <nav className={styles.navbar}>
             <div className={styles.maxWidth}>
                 <div className={styles.logo}>
                     <Link href="/">Eco-Eletrica</Link>
                 </div>
-                <ul className={`${styles.menu} ${ isActive ? styles.active : ""}`} id={styles.menuSite}>
+                <ul className={`${styles.menu} ${isActive ? styles.active : ""}`} id={styles.menuSite}>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/sobre">Sobre Empresa</Link></li>
                     <li><Link href="/contato">Contato</Link></li>

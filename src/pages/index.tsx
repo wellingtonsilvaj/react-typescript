@@ -2,8 +2,11 @@ import Head from "next/head";
 import Menu from '@/components/Menu';
 import HomeTop from "@/components/HomeTop";
 import HomeServ from "@/components/HomeServ";
+import HomePrem from "@/components/HomePrem";
+import Footer from "@/components/Footer";
 
- const Home = ():React.ReactElement => {
+
+const Home = (): React.ReactElement => {
   return (
     <>
       <Head>
@@ -16,6 +19,8 @@ import HomeServ from "@/components/HomeServ";
         <Menu />
         <HomeTop />
         <HomeServ />
+        <HomePrem />
+        <Footer />
       </main>
     </>
   );
