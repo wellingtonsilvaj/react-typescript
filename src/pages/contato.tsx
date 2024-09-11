@@ -1,7 +1,11 @@
+import styles from '@/styles/contact.module.css';
 import Head from "next/head";
 import Menu from "@/components/Menu";
+import ContactContent from '@/components/ContactContent';
+import ContactForm from '@/components/ContactForm';
+import Footer from "@/components/Footer";
 
-export default function Sobre() {
+const Contato = (): React.ReactElement => {
   return (
     <>
       <Head>
@@ -12,9 +16,20 @@ export default function Sobre() {
       </Head>
       <main>
         <Menu />
-        <br /><br /><br /><br /><br /><br /><br /><br />
-        <h2>Página de Contato</h2>
+        <section className={`${styles.content} ${styles.contact}`}>
+            <div className={styles.maxWidth}>
+                <h2 className={styles.title}>Contato</h2>
+                <div className={styles.contactContent}>
+                <ContactContent />
+                <ContactForm />
+               
+              </div>
+            </div>
+          </section>
+        <Footer />
       </main>
     </>
   );
 }
+
+export default Contato;
